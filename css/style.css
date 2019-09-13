@@ -12,9 +12,64 @@ body{
 
 a{
     margin: 0 1rem 0 1rem; 
+    
 }
-#aaa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.transparente{
+    color: rgba(0,0,0, 0.7) !important;
 }
+
+section{
+    width: 60rem !important;
+    /* left: 0 !important;
+    right:0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important; */
+}
+
+#txt1{
+    color: var(--vermelho);
+    letter-spacing: 0.4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+#txt2{
+    color: var(--preto);
+    font-size: 7rem;
+    line-height: 3rem;
+    letter-spacing: 0.6rem;
+}
+#txt3{
+    color: var(--vermelho);
+    font-weight: 500;
+    line-height: 3rem;
+    font-size: 7rem;
+}
+
+img{
+    margin: auto;
+}
+#begin{
+    text-decoration: none;
+    color: var(--preto);
+    letter-spacing: 0.3rem;
+    margin: auto;
+}
+/* Home footer */
+.colorRed{
+    color: var(--vermelho);
+    line-height: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.colorBlack{
+    color: var(--preto);
+}
+.smallSize{
+    font-size: 1rem;
+}
+/* fim do home footer */
+
+/* engine */
