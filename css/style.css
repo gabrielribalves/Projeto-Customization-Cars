@@ -9,15 +9,12 @@
 body{
     font-family: 'Saira Condensed', sans-serif;
 }
-
-a{
-    margin: 0 1rem 0 1rem; 
-    
+.ancorHome{
+    margin: 0 1rem 0 1rem;
 }
 .transparente{
     color: rgba(0,0,0, 0.7) !important;
 }
-
 section{
     width: 60rem !important;
     /* left: 0 !important;
@@ -26,7 +23,7 @@ section{
     bottom: 0 !important;
     margin: auto !important; */
 }
-
+/* Home */
 #txt1{
     color: var(--vermelho);
     letter-spacing: 0.4rem;
@@ -47,7 +44,7 @@ section{
     font-size: 7rem;
 }
 
-img{
+.imgHome{
     margin: auto;
 }
 #begin{
@@ -56,6 +53,21 @@ img{
     letter-spacing: 0.3rem;
     margin: auto;
 }
+.hrClass{
+    border: solid var(--vermelho) 1.5px;
+    width: 2.4rem;
+    border-radius: 25%;
+}
+.hrTop{
+    top: 0.9rem;
+    left: 40.7rem;
+}
+.hrLeft{
+    top: 2rem;
+    left: 9.4rem;
+    width: 5rem;
+}
+/* fim do Home */
 /* Home footer */
 .colorRed{
     color: var(--vermelho);
@@ -73,3 +85,34 @@ img{
 /* fim do home footer */
 
 /* engine */
+#mainEngine{
+  width: 55rem;
+}
+
+.engineCar{
+  /* transform: rotate(90deg); */
+  width: 16.5rem;
+}
+
+.engineRow{
+    padding: 1.5rem;
+}
+
+.circleRed {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--vermelho);
+  box-shadow: inset -10px -10px 10px #800000, inset 3px 3px 5px #FFF;
+}
+.circleWhite {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(165, 146, 146, 0.1);
+  box-shadow: inset -10px -10px 10px grey, inset 3px 3px 5px #FFF;
+}
+
+/* fim do engine */
