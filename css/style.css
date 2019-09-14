@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500&display=swap');
 
 :root{
-    --vermelho: #ab1725;
-    --preto: #0f1c2d;
-    --cinza: #a59292;
-    --transicao: all 0.3s linear;
+    --red: #ab1725;
+    --black: #0f1c2d;
+    --grey: #a59292;
+    --mainTransition: all 0.3s linear;
+}
+html{
+  width: 100%;
+  height: 100%;
 }
 body{
     font-family: 'Saira Condensed', sans-serif;
@@ -25,20 +29,20 @@ section{
 }
 /* Home */
 #txt1{
-    color: var(--vermelho);
+    color: var(--red);
     letter-spacing: 0.4rem;
     font-weight: 500;
     font-size: 1.5rem;
     margin-left: 0.4rem;
 }
 #txt2{
-    color: var(--preto);
+    color: var(--black);
     font-size: 7rem;
     line-height: 3rem;
     letter-spacing: 0.6rem;
 }
 #txt3{
-    color: var(--vermelho);
+    color: var(--red);
     font-weight: 500;
     line-height: 3rem;
     font-size: 7rem;
@@ -49,14 +53,14 @@ section{
 }
 #begin{
     text-decoration: none;
-    color: var(--preto);
+    color: var(--black);
     letter-spacing: 0.3rem;
     margin: auto;
 }
 .hrClass{
-    border: solid var(--vermelho) 1.5px;
+    border: solid var(--red) 1.5px;
     width: 2.4rem;
-    border-radius: 25%;
+    /* border-radius: 50%; */
 }
 .hrTop{
     top: 0.9rem;
@@ -70,19 +74,42 @@ section{
 /* fim do Home */
 /* Home footer */
 .colorRed{
-    color: var(--vermelho);
+    color: var(--red);
     line-height: 0.5rem;
     font-size: 2rem;
     letter-spacing: 0;
     font-weight: 500;
 }
 .colorBlack{
-    color: var(--preto);
+    color: var(--black);
 }
 .smallSize{
     font-size: 1rem;
 }
 /* fim do home footer */
+
+/* General footer */
+#generalFooter{
+  display: inline !important;
+}
+.generalFooterTxtLarge{
+  font-size: 1.9rem;
+  letter-spacing: 0.15rem;
+  color: var(--red);
+}
+.generalFooterTxtSmall{
+  font-size: 0.8rem;
+
+}
+.generalFooterTxtExSmall{
+
+}
+
+.fixarr{
+  margin-bottom: -100px;
+}
+
+/* End of General footer */
 
 /* engine */
 #mainEngine{
@@ -91,24 +118,48 @@ section{
 
 .engineCar{
   /* transform: rotate(90deg); */
-  width: 16.5rem;
+  /* width: 16em; */
 }
 
+#engineTitle{
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
 .engineRow{
-    padding: 1.5rem;
+    padding: 0.8rem;
+}
+.engineTxtLarge{
+  font-size: 1.8rem;
+  color: var(--black);
+}
+.engineTxtRed{
+  color: var(--red);
+  font-weight: 550;
+}
+.engineTxtSmall{
+  font-size: 1.15rem;
+  color: var(--black);
+  font-weight: 500;
+}
+.engineTxtGrey{
+  font-weight: 300;
+  font-size: 1rem;
+}
+.engineTraparent{
+  color: rgba(15, 28, 45, 0.5);
 }
 
 .circleRed {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   cursor: pointer;
-  background: var(--vermelho);
+  background: var(--red);
   box-shadow: inset -10px -10px 10px #800000, inset 3px 3px 5px #FFF;
 }
 .circleWhite {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   cursor: pointer;
   background: rgba(165, 146, 146, 0.1);
@@ -116,3 +167,8 @@ section{
 }
 
 /* fim do engine */
+
+/* body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+} */

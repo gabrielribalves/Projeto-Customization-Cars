@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +7,88 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
+    <style>
+      html{
+        padding-bottom: -100px;
+      }
+    </style>
 </head>
 <body>
-    <div class="container"> 
+    <div class="container">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light my-5">
+            <nav class="navbar navbar-expand-lg navbar-light my-4">
                 <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto" id="ulNavbar">
-                        <li class="nav-item">
-                            <a class="font-weight-bold ancorHome">Model R</a>
-                        </li>
-                        <hr class="position-absolute hrClass hrTop">
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model IQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Mobi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Charlie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Italy</a>
-                        </li>
+                      <li class="nav-item">
+                          <a class="font-weight-bold ancorHome">Model R</a>
+                          <hr class="position-absolute hrClass hrTop">
+                      </li>
+                      <li class="nav-item">
+                          <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                      </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <!-- fim do header -->
         <!-- principal -->
-        <div class="bg-dark my-2" id="mainEngine">
+        <div class="my-2" id="mainEngine">
             <div class="row">
-                <div class="col-6">
-                    <img src="img/1.png" alt="Motor 1" class="img-fluid engineCar">
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                    <img src="img/11.png" alt="Motor 1" class="img-fluid engineCar">
                 </div>
-                <div class="col-6">
-                    <p class="my-5">Engine</p>
-                    <div class="row bg-light engineRow my-5">
-                        <div class="col-2">
-                            <p>75 <span>P</span></p>
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                    <p class="my-2" id="engineTitle">Engine</p>
+                    <div class="row bg-light engineRow my-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
-                        <div class="col-3">
-                            <p>75 <span>kWh</span></p>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
                         </div>
-                        <div class="col-5">
-                            <p>275 <span>miles range</span></p>
+                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
                             <div class="circleRed"></div>
                         </div>
                     </div>
-                    <div class="row bg-light engineRow my-5">
-                        <div class="col-2">
-                            <p>75 <span>P</span></p>
+                    <div class="row bg-light engineRow my-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge engineTraparent">75 <span class="engineTxtRed engineTraparent">P</span></p>
                         </div>
-                        <div class="col-3">
-                            <p>75 <span>kWh</span></p>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
                         </div>
-                        <div class="col-5">
-                            <p>275 <span>miles range</span></p>
+                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                            <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
                             <div class="circleWhite"></div>
                         </div>
                     </div>
-                    <div class="row bg-light engineRow">
-                        <div class="col-2">
-                            <p>75 <span>P</span></p>
+                    <div class="row bg-light engineRow my-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge engineTraparent">75 <span class="engineTxtRed engineTraparent">P</span></p>
                         </div>
-                        <div class="col-3">
-                            <p>75 <span>kWh</span></p>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
                         </div>
-                        <div class="col-5">
-                            <p>275 <span>miles range</span></p>
+                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                            <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
                             <div class="circleWhite"></div>
                         </div>
                     </div>
@@ -91,10 +96,27 @@
             </div>
         </div>
         <!-- fim do principal -->
-        <!-- footer -->
-        <!-- fim do footer -->
+        <!-- geneal footer -->
+          <footer class="bg-light navbar-fixed-bottom">
+            <div class="row">
+              <div class="col-2">
+                <p>Total</p>
+                <p class="generalFooterTxtLarge">$63.000</p>
+              </div>
+              <div class="col-2">
+                <p>Model R</p>
+              </div>
+              <div class="col-7">
+                <p>75 <span>P</span> </p>
+              </div>
+              <div class="col-1">
+                <a href="#">next<img src="img/arrow.svg" alt="Arrow to left"> </a>
+              </div>
+            </div>
+          </footer>
+        <!-- fim do general footer -->
     </div>
   <script src="js/app.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
-</html> 
+</html>
