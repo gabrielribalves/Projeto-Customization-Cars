@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
-    <style>
-      html{
-        padding-bottom: -100px;
-      }
-    </style>
 </head>
 <body>
     <div class="container">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light my-4">
+            <nav class="navbar navbar-expand-lg navbar-light my-1">
                 <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto" id="ulNavbar">
@@ -43,12 +38,11 @@
         </header>
         <!-- fim do header -->
         <!-- principal -->
-        <div class="my-2" id="mainEngine">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-12 col-12">
                     <img src="img/11.png" alt="Motor 1" class="img-fluid engineCar">
                 </div>
-                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                <div class="col-xl-7 col-lg-7 col-sm-7 col-xs-12 col-12">
                     <p class="my-2" id="engineTitle">Engine</p>
                     <div class="row bg-light engineRow my-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
@@ -94,28 +88,33 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!-- fim do principal -->
-        <!-- geneal footer -->
-          <footer class="bg-light navbar-fixed-bottom">
-            <div class="row">
-              <div class="col-2">
-                <p>Total</p>
-                <p class="generalFooterTxtLarge">$63.000</p>
-              </div>
-              <div class="col-2">
-                <p>Model R</p>
-              </div>
-              <div class="col-7">
-                <p>75 <span>P</span> </p>
-              </div>
-              <div class="col-1">
-                <a href="#">next<img src="img/arrow.svg" alt="Arrow to left"> </a>
-              </div>
-            </div>
-          </footer>
-        <!-- fim do general footer -->
     </div>
+    <!-- geneal footer -->
+      <footer class="container-fluid shadow-lg">
+          <div class="row align-items-center">
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1">
+                <p class="nbsp">&nbsp;</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                <p class="generalFooterTxtSmall" id="total">Total</p>
+                <p class="generalFooterTxtLarge" id="total">$63.000</p>
+            </div>
+            <!-- TODO diminuir o tamanho do $63.000 para dispositivos -->
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                <p class="generalFooterTxtSmall">Model R</p>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-2">
+                <p class="generalFooterTxtSmall">75 <span class="generalFooterTxtSmallRed">P</span> </p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                <a href="#" class="noUnderline">
+                    <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left">
+                </a>
+            </div>
+        </div>
+      </footer>
+    <!-- fim do general footer -->
   <script src="js/app.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
