@@ -32,11 +32,14 @@ body{
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
 }
+.pointer{
+    cursor: pointer;
+}
 /* End of General configuration */
 
 /* General footer */
 /* #generalFooter{
-    position:absolute;
+    position: absolute;
     bottom: 0;
 } */
 .generalFooterTxtLarge{
@@ -65,41 +68,8 @@ body{
     padding-left: 11rem;
     padding-right: 11rem;
 }
-
-  /* End of General footer */
-
-/* Home */
 .ancorHome{
     margin: 0 1rem 0 1rem;
-}
-#txt1{
-    color: var(--red);
-    letter-spacing: 0.4rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-left: 0.4rem;
-}
-#txt2{
-    color: var(--black);
-    font-size: 7rem;
-    line-height: 3rem;
-    letter-spacing: 0.6rem;
-}
-#txt3{
-    color: var(--red);
-    font-weight: 500;
-    line-height: 3rem;
-    font-size: 7rem;
-}
-
-.imgHome{
-    margin: auto;
-}
-#begin{
-    text-decoration: none;
-    color: var(--black);
-    letter-spacing: 0.3rem;
-    margin: auto;
 }
 .hrClass{
     border: solid var(--red) 1.5px;
@@ -110,24 +80,8 @@ body{
     top: 0.9rem;
     left: 40.7rem;
 }
-.hrLeft{
-    top: 2rem;
-    left: 9.4rem;
-    width: 5rem;
-}
-/* Home footer */
-.colorRed{
-    color: var(--red);
-    line-height: 0.5rem;
-    font-size: 2rem;
-    letter-spacing: 0;
-    font-weight: 500;
-}
-.colorBlack{
-    color: var(--black);
-}
-.smallSize{
-    font-size: 1rem;
-}
-/* fim do home footer */
+  /* End of General footer */
+
+/* Home */
+
 /* fim do Home */

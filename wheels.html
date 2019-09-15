@@ -14,49 +14,88 @@
         .wheels{
             margin-top: 3rem;
         }
+        #wheel1{
+            width: 13rem;
+            opacity: 0.4;
+        }
+        #wheel1:hover{
+            opacity: 1;
+            width: 17rem;
+            transition: all 0.2s linear;
+        }
+        #wheel2{
+            width: 13rem;
+            opacity: 0.4;
+        }
+        #wheel2:hover{
+            opacity: 1;
+            width: 17rem;
+            transition: all 0.2s linear;
+        }
+        #wheel3{
+            width: 13rem;
+            opacity: 0.4;
+        }
+        #wheel3:hover{
+            opacity: 1;
+            width: 17rem;
+            transition: all 0.2s linear;
+        }
+        .txtDesc{
+            font-weight: 500;
+            line-height: 1rem;
+            display: none;
+            transition: all 0.2s linear;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light my-1">
-                <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto" id="ulNavbar">
-                        <li class="nav-item">
-                            <a class="font-weight-bold ancorHome">Model R</a>
-                            <hr class="position-absolute hrClass hrTop">
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model IQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Mobi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Charlie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Italy</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header> 
+                <nav class="navbar navbar-expand-lg navbar-light my-1">
+                    <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto" id="ulNavbar">
+                            <li class="nav-item">
+                                <a class="font-weight-bold ancorHome">Model R</a>
+                                <hr class="position-absolute hrClass hrTop">
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         <!-- fim do header -->
         <!-- Main Content -->
         <p class="title text-center" id="titleWheels">Wheels</p>
         <div class="row wheels" align="center">
             <!-- <div class="col-1"></div> -->
             <div class="col-4">
-                <img src="img/7.png" alt="Wheel 01">
+                <img src="img/7.png" class="img-fluid pointer mb-4" id="wheel1" alt="Wheel 01">
+                <p class="txtDesc">20"Silver Metalic</p>
+                <p class="red txtDesc">Included</p>
             </div>
             <div class="col-4">
-                <img src="img/8.png" alt="Wheel 02">
+                <img src="img/8.png" class="img-fluid pointer mb-4" id="wheel2" alt="Wheel 02">
+                <p class="txtDesc">20"Silver Metalic</p>
+                <p class="red txtDesc">Included</p>
             </div>
             <div class="col-4">
-                <img src="img/9.png" alt="Wheel 03">
+                <img src="img/9.png" class="img-fluid pointer mb-4" id="wheel3" alt="Wheel 03">
+                <p class="txtDesc">20"Silver Metalic</p>
+                <p class="red txtDesc">Included</p>
             </div>
         </div>
         <!-- End of Main Content -->

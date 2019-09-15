@@ -7,35 +7,88 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
+    <style>
+        #txt1{
+            color: var(--red);
+            letter-spacing: 0.4rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-left: 0.4rem;
+        }
+        #txt2{
+            color: var(--black);
+            font-size: 7rem;
+            line-height: 3rem;
+            letter-spacing: 0.6rem;
+        }
+        #txt3{
+            color: var(--red);
+            font-weight: 500;
+            line-height: 3rem;
+            font-size: 7rem;
+        }
+
+        .imgHome{
+            margin: auto;
+        }
+        #begin{
+            text-decoration: none;
+            color: var(--black);
+            letter-spacing: 0.3rem;
+            margin: auto;
+            transition: all 0.1s ease-in-out;
+        }
+        #begin:hover{
+            /* font-weight: 600; */
+            font-size: 1.4rem;
+        }
+        .hrLeft{
+            top: 2rem;
+            left: 9.4rem;
+            width: 5rem;
+        }
+        /* Home footer */
+        .colorRed{
+            color: var(--red);
+            line-height: 0.5rem;
+            font-size: 2rem;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+        .smallSize{
+            font-size: 1rem;
+        }
+        /* fim do home footer */
+    </style>
 </head>
 <body>
     <div class="container">
-          <!-- header -->
-          <header>
-                <nav class="navbar navbar-expand-lg navbar-light my-1">
-                    <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto" id="ulNavbar">
-                          <li class="nav-item">
-                              <a class="font-weight-bold ancorHome">Model R</a>
-                              <hr class="position-absolute hrClass hrTop">
-                          </li>
-                          <li class="nav-item">
-                              <a class="font-weight-light transparente ancorHome">Model IQ</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="font-weight-light transparente ancorHome">Model Mobi</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="font-weight-light transparente ancorHome">Model Charlie</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="font-weight-light transparente ancorHome">Model Italy</a>
-                          </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light my-1">
+                <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto" id="ulNavbar">
+                        <li class="nav-item">
+                            <a class="font-weight-bold ancorHome">Model R</a>
+                            <hr class="position-absolute hrClass hrTop">
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <!-- fim do header -->
         <!-- Conteúdo principal -->
         <section>
@@ -52,7 +105,12 @@
             <div class="row">
                 <img src="img/car-home.png" alt="Carro vermelho" class="img-fluid imgHome">
             </div>
-            <a href="engine.html" class="text-center d-block" id="begin">BEGIN <img src="img/arrow.svg" alt="Left arrow"></a>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-3"><a href="engine.html" class="text-center d-block" id="begin">BEGIN <img src="img/arrow.svg" alt="Left arrow"></a></div>
+                <div class="col-2"></div>
+            </div>
+            
             <!-- o espaço de clique está em todo o width da página -->
       </section>
       <!-- Fim do conteúdo principal -->

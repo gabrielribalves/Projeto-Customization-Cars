@@ -8,51 +8,77 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
     <style>
-        /* body{
-            overflow-x: hidden;
-            overflow-y: hidden;
-        } */
+        body{
+            height: 100% !important;
+        }
         /* .engineCar{
         transform: rotate(90deg);
         } */
         .engineRow{
             padding: 0.8rem;
+            cursor: pointer;
         }
         .engineTxtLarge{
             font-size: 1.8rem;
             color: var(--black);
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.2s linear;
         }
         .engineTxtRed{
             color: var(--red);
             font-weight: 550;
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.2s linear;
         }
         .engineTxtSmall{
             font-size: 1.15rem;
             color: var(--black);
             font-weight: 500;
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.2s linear;
         }
         .engineTxtGrey{
             font-weight: 300;
             font-size: 1rem;
+            filter: grayscale(100%) opacity(70%);            
+            transition: all 0.2s linear;
         }
         .engineTraparent{
             color: rgba(15, 28, 45, 0.5);
         }
         .circleRed {
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 1.3rem;
+            height: 1.3rem;
             border-radius: 50%;
-            cursor: pointer;
             background: var(--red);
             box-shadow: inset -10px -10px 10px #800000, inset 3px 3px 5px #FFF;
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.2s linear;
         }
-        .circleWhite {
+        /* .circleWhite {
             width: 1.6rem;
             height: 1.6rem;
             border-radius: 50%;
             cursor: pointer;
             background: rgba(165, 146, 146, 0.1);
             box-shadow: inset -10px -10px 10px grey, inset 3px 3px 5px #FFF;
+        } */
+        .engineRow:hover .circleRed{
+            filter: grayscale(0) opacity(1);
+            width: 1.6rem;
+            height: 1.6rem;            
+        }
+        .engineRow:hover .engineTxtLarge{
+            filter: grayscale(0) opacity(1);
+        }
+        .engineRow:hover .engineTxtRed{
+            filter: grayscale(0) opacity(1);
+        }
+        .engineRow:hover .engineTxtSmall{
+            filter: grayscale(0) opacity(1);
+        }
+        .engineRow:hover .engineTxtSmall{
+            filter: grayscale(0) opacity(1);
         }
     </style>
 </head>
@@ -60,30 +86,30 @@
     <div class="container">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light my-1">
-                <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto" id="ulNavbar">
-                      <li class="nav-item">
-                          <a class="font-weight-bold ancorHome">Model R</a>
-                          <hr class="position-absolute hrClass hrTop">
-                      </li>
-                      <li class="nav-item">
-                          <a class="font-weight-light transparente ancorHome">Model IQ</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="font-weight-light transparente ancorHome">Model Mobi</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="font-weight-light transparente ancorHome">Model Charlie</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="font-weight-light transparente ancorHome">Model Italy</a>
-                      </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                <nav class="navbar navbar-expand-lg navbar-light my-1">
+                    <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto" id="ulNavbar">
+                            <li class="nav-item">
+                                <a class="font-weight-bold ancorHome">Model R</a>
+                                <hr class="position-absolute hrClass hrTop">
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         <!-- fim do header -->
         <!-- principal -->
             <div class="row">
@@ -108,30 +134,30 @@
                     </div>
                     <div class="row bg-light engineRow my-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtLarge engineTraparent">75 <span class="engineTxtRed engineTraparent">P</span></p>
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
                         </div>
                         <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                            <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
                         </div>
                         <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                            <div class="circleWhite"></div>
+                            <div class="circleRed"></div>
                         </div>
                     </div>
                     <div class="row bg-light engineRow my-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtLarge engineTraparent">75 <span class="engineTxtRed engineTraparent">P</span></p>
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
                         </div>
                         <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                            <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
                         </div>
                         <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                            <div class="circleWhite"></div>
+                            <div class="circleRed"></div>
                         </div>
                     </div>
                 </div>
@@ -141,9 +167,7 @@
     <!-- geneal footer -->
       <footer class="container-fluid shadow-lg" id="generalFooter">
           <div class="row align-items-center">
-            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1">
-                <p class="nbsp">&nbsp;</p>
-            </div>
+            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1"></div>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
                 <p class="generalFooterTxtSmall" id="total">Total</p>
                 <p class="generalFooterTxtLarge" id="total">$63.000</p>
