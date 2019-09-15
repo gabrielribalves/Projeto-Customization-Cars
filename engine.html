@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
+    <style>
+        /* body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        } */
+        /* .engineCar{
+        transform: rotate(90deg);
+        } */
+        .engineRow{
+            padding: 0.8rem;
+        }
+        .engineTxtLarge{
+            font-size: 1.8rem;
+            color: var(--black);
+        }
+        .engineTxtRed{
+            color: var(--red);
+            font-weight: 550;
+        }
+        .engineTxtSmall{
+            font-size: 1.15rem;
+            color: var(--black);
+            font-weight: 500;
+        }
+        .engineTxtGrey{
+            font-weight: 300;
+            font-size: 1rem;
+        }
+        .engineTraparent{
+            color: rgba(15, 28, 45, 0.5);
+        }
+        .circleRed {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background: var(--red);
+            box-shadow: inset -10px -10px 10px #800000, inset 3px 3px 5px #FFF;
+        }
+        .circleWhite {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background: rgba(165, 146, 146, 0.1);
+            box-shadow: inset -10px -10px 10px grey, inset 3px 3px 5px #FFF;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -40,10 +88,10 @@
         <!-- principal -->
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-12 col-12">
-                    <img src="img/11.png" alt="Motor 1" class="img-fluid engineCar">
+                    <img src="img/1.png" alt="Motor 1" class="img-fluid engineCar">
                 </div>
                 <div class="col-xl-7 col-lg-7 col-sm-7 col-xs-12 col-12">
-                    <p class="my-2" id="engineTitle">Engine</p>
+                    <p class="my-2 title">Engine</p>
                     <div class="row bg-light engineRow my-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
@@ -51,7 +99,7 @@
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                             <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
                         </div>
                         <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
@@ -65,7 +113,7 @@
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                             <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
                         </div>
                         <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
@@ -79,7 +127,7 @@
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtSmall engineTraparent">75 <span class="engineTxtGrey engineTraparent">kWh</span></p>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-5 col-5">
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                             <p class="engineTxtSmall engineTraparent">275 <span class="engineTxtGrey engineTraparent">miles range</span></p>
                         </div>
                         <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
@@ -91,7 +139,7 @@
         <!-- fim do principal -->
     </div>
     <!-- geneal footer -->
-      <footer class="container-fluid shadow-lg">
+      <footer class="container-fluid shadow-lg" id="generalFooter">
           <div class="row align-items-center">
             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1 col-1">
                 <p class="nbsp">&nbsp;</p>
@@ -108,8 +156,8 @@
                 <p class="generalFooterTxtSmall">75 <span class="generalFooterTxtSmallRed">P</span> </p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
-                <a href="#" class="noUnderline">
-                    <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left">
+                <a href="wheels.html" class="noUnderline">
+                    <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
                 </a>
             </div>
         </div>
