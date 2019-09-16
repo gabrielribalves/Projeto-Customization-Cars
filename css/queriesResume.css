@@ -1,0 +1,49 @@
+@media (max-width: 576px) {
+    .space{
+        display: none;
+    }
+    #rebuild:hover{
+        font-size: 1rem;
+    }
+    #rebuild:hover #rebuildIcon{
+        width: 1rem;
+    }
+    #veicle{
+        margin-top: 0.5rem;
+        /* justify-content: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav{
+        margin-bottom: -2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .space{
+        display: none;
+    }
+    #rebuild:hover{
+        font-size: 1rem;
+    }
+    #rebuild:hover #rebuildIcon{
+        width: 1rem;
+    }
+    #veicle{
+        margin-top: 0.5rem;
+        /* justify-content: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav{
+        margin-bottom: -2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
