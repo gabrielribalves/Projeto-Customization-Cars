@@ -27,11 +27,11 @@
         }
 
         @media (max-width: 360px){
-            .destroy{
-                display: none;
-            }
             .title{
                 font-size: 1.0rem;
+            }
+            .destroy{
+              display: none;
             }
         }
         @media(max-width: 575.98px){
@@ -39,15 +39,15 @@
                 font-size: 1.5rem;
             }
         }
-        @media (max-width: 767.98px) {
-            .central{
-                text-align: center;
-            }
+        @media(max-width: 991.98px){
+          .central{
+              text-align: center;
+          }
         }
     </style>
 </head>
 <body>
-    <div class="container"> 
+    <div class="container">
             <!-- header -->
             <header>
                     <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
@@ -115,14 +115,14 @@
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                 <div class="row mb-4">
                     <div class="col-1 destroy"></div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                         <img src="img/dot-red-off.png" class="img-fluid pointer dot" id="dotRed" alt="Dot red">
                     </div>
-                    <div class="col-1 destroy"></div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4" >
+                    <div class="col-1"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" >
                         <img src="img/dot-blue-off.png" class="img-fluid pointer dot" id="dotBlue" alt="Dot blue">
                     </div>
-                    <div class="col-1 destroy"></div>
+                    <div class="col-1"></div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                         <img src="img/dot-grey-off.png" class="img-fluid pointer dot" id="dotGrey" alt="Dot grey">
                     </div>
@@ -163,4 +163,4 @@
   <script src="js/app.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
-</html> 
+</html>
