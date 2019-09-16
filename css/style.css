@@ -81,6 +81,12 @@ body{
 .icon{
     width: 2rem;
 }
+@media (max-width: 767.98px) {
+    .erase{
+        display: none;
+    }
+
+}
   /* End of General footer */
 
 /* Home */

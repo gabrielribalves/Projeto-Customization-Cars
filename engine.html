@@ -88,45 +88,85 @@
         footer{
             margin-top: auto;
         }
+        @media (max-width: 395px){
+            .engineTxtLarge, .engineTxtRed,.engineTxtSmall,.engineTxtGrey{
+                font-size: 85%;
+            }
+            .title{
+                font-size: 180%;
+            }
+        }
+        @media (max-width: 575px) {
+            #model{
+                display: inline-block !important;
+                /* top: 2rem; */
+            }
+
+        }
+        @media (max-width: 768px) {
+            .engineCar{
+                transform: rotate(270deg);
+                padding-left: 40%;
+                margin-bottom: -11rem;
+            }
+            .bars{
+                /* padding-bottom: 10%; */
+                margin-bottom: -100%;
+            }
+            .title{
+                margin-bottom: -20%;
+            }
+            .erase{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- header -->
         <header>
-                <nav class="navbar navbar-expand-lg navbar-light my-1">
+                <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
                     <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                    <p class="font-weight-bold d-none no-padding" id="model">Model R</p>
                     <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto" id="ulNavbar">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="font-weight-bold ancorHome">Model R</a>
-                                <hr class="position-absolute hrClass hrTop">
+                                <!-- <hr class="position-absolute hrClass hrTop"> -->
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                                <a class="font-weight-light transparente ancorHome erase">Model IQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                                <a class="font-weight-light transparente ancorHome erase">Model Mobi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                                <a class="font-weight-light transparente ancorHome erase">Model Charlie</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                                <a class="font-weight-light transparente ancorHome erase">Model Italy</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
+
         <!-- fim do header -->
         <!-- principal -->
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-1 col-sm-1 col-1"></div>
+            <div class="col-3">
+                <p class="mt-2 title">Engine</p>
+            </div>
+        </div>
+        
             <div class="row">
-                <div class="col-xl-5 col-lg-5 col-sm-5 col-xs-12 col-12">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                     <img src="img/1.png" alt="Motor 1" class="img-fluid engineCar">
                 </div>
-                <div class="col-xl-7 col-lg-7 col-sm-7 col-xs-12 col-12">
-                    <p class="my-2 title">Engine</p>
-                    <div class="row bg-light engineRow my-5 align-items-center">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="row bg-light engineRow mt-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
@@ -140,7 +180,7 @@
                             <div class="circleRed"></div>
                         </div>
                     </div>
-                    <div class="row bg-light engineRow my-5 align-items-center">
+                    <div class="row bg-light engineRow mt-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
@@ -154,7 +194,7 @@
                             <div class="circleRed"></div>
                         </div>
                     </div>
-                    <div class="row bg-light engineRow my-5 align-items-center">
+                    <div class="row bg-light engineRow mt-5 align-items-center">
                         <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                             <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                         </div>
@@ -176,13 +216,12 @@
     <footer class="container-fluid shadow-lg" id="generalFooter">
             <div class="row align-items-center">
                 <div class="col-1 erase"></div>
-                <div class="col-xl-2 col-lg-2 col-md-9 col-sm-9 col-8">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
                     <p class="generalFooterTxtSmall" id="total">Total</p>
                     <p class="generalFooterTxtLarge" id="total">$63.000</p>
                 </div>
-                <!-- TODO diminuir o tamanho do $63.000 para dispositivos -->
 
-                <div class="col-1 erase">
+                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
                     <p class="generalFooterTxtSmall">Model R</p>
                 </div>
                 <div class="col-1 erase">
@@ -191,10 +230,10 @@
                 <div class="col-1 erase">
                     <img src="img/dot-red.png" class="icon " alt="dot red">
                 </div>
-                <div class="col-4 erase">
+                <div class="col-3 erase">
                     <img src="img/7.png" class="icon " alt="dot red">
                 </div>
-                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-4">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
                     <a href="wheels.html" class="noUnderline">
                         <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
                     </a>
