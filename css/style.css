@@ -87,7 +87,7 @@ body{
         /* top: 2rem; */
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .erase{
         display: none;
     }
