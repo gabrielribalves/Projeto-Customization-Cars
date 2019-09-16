@@ -60,31 +60,80 @@
             font-size: 1rem;
         }
         /* fim do home footer */
+        @media (max-width: 424px) {
+            #txt2, #txt3{
+                font-size: 5rem
+            }
+            .colorRed{
+                font-size: 2.1rem;
+            }
+            .black{
+                font-size: 0.9rem;
+            }
+            .smallSize{
+                font-size: 0.8rem;
+            }
+        }
+        @media (max-width: 575px) {
+            #model{
+                display: inline-block !important;
+                /* top: 2rem; */
+            }
+        }
+        @media (max-width: 576px) {
+            .erase{
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .erase{
+                display: none;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hrLeft{
+                position: absolute;
+                margin-right: -3rem ;            
+            }
+            /* body{
+                display: none;
+            } */
+        }
+
+        @media (max-width: 1200px) {
+            .hrLeft{
+                margin-left: -2rem ;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light my-1">
+            <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
                 <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                <p class="font-weight-bold d-none no-padding" id="model">Model R</p>
                 <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto" id="ulNavbar">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="font-weight-bold ancorHome">Model R</a>
-                            <hr class="position-absolute hrClass hrTop">
+                            <!-- <hr class="position-absolute hrClass hrTop"> -->
                         </li>
                         <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model IQ</a>
+                            <a class="font-weight-light transparente ancorHome erase">Model IQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Mobi</a>
+                            <a class="font-weight-light transparente ancorHome erase">Model Mobi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Charlie</a>
+                            <a class="font-weight-light transparente ancorHome erase">Model Charlie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="font-weight-light transparente ancorHome">Model Italy</a>
+                            <a class="font-weight-light transparente ancorHome erase">Model Italy</a>
                         </li>
                     </ul>
                 </div>
@@ -94,61 +143,47 @@
         <!-- Conteúdo principal -->
         <section>
             <div class="row">
-              <div class="col-6">
+              <div class="col-8">
                   <p id="txt1">Build your</p>
               </div>
             </div>
             <div class="row">
-                <!-- <p class="col-2"></p> -->
-                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-5" >
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10" >
                     <p id="txt2">MODEL</p>
                 </div>
-                <div class="col-xl-0 col-lg-3 col-md-2 col-sm-2 col-5" >
+                <div class="col-xl-1 col-lg-3 col-md-1 col-sm-1 col-1" >
                     <p id="txt3">R</p>
                 </div>
-                
             </div>
             <div class="row">
                 <img src="img/car-home.png" alt="Carro vermelho" class="img-fluid imgHome">
             </div>
             <div class="row">
-                <div class="col-5"></div>
-                <div class="col-3"><a href="engine.html" class="text-center d-block" id="begin">BEGIN <img src="img/arrow.svg" alt="Left arrow"></a></div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <a href="engine.html" class="text-center d-block" id="begin">BEGIN <img src="img/arrow.svg" alt="Left arrow"></a>
+                </div>
                 <div class="col-2"></div>
             </div>
-            
-            <!-- o espaço de clique está em todo o width da página -->
       </section>
       <!-- Fim do conteúdo principal -->
       <!-- footer -->
       <footer class="container text-center fixed-bottom">
           <div class="row">
               <div class="col-4">
-                <div>
                     <p class="colorRed">2.5 <span class="smallSize">s</span></p>
-                </div>
-                <div>
                     <p class="black">From 0 to 100</p>
-                    <hr class="position-absolute hrClass hrLeft">
-                </div>
+                    <!-- <hr class="position-absolute hrClass hrLeft"> -->
               </div>
               <div class="col-4">
-                  <div>
-                      <p class="colorRed">420 <span class="smallSize">mi</span></p>
-                  </div>
-                  <div>
-                      <p class="black">Miles range</p>
-                    </div>
-                    <hr class="position-absolute hrClass hrLeft">
+                    <p class="colorRed">420 <span class="smallSize">mi</span></p>
+                    <p class="black">Miles range</p>
+                    <!-- <hr class="position-absolute hrClass hrLeft"> -->
               </div>
               <div class="col-4">
-                  <div>
                       <p class="colorRed">250 <span class="smallSize">mp/h</span></p>
-                  </div>
-                  <div>
                       <p class="black">Max speed</p>
-                      <hr class="position-absolute hrClass hrLeft">
-                  </div>
+                      <!-- <hr class="position-absolute hrClass hrLeft"> -->
               </div>
           </div>
       </footer>
