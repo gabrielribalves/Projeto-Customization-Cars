@@ -10,36 +10,29 @@
     <style>
         .title{
             margin-bottom: -2rem;
-            z-index: 1;
         }
         .engineRow{
             padding: 0.8rem;
             cursor: pointer;
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.2s linear;
         }
         .engineTxtLarge{
             font-size: 1.8rem;
             color: var(--black);
-            filter: grayscale(100%) opacity(70%);
-            transition: all 0.2s linear;
         }
         .engineTxtRed{
             color: var(--red);
             font-weight: 550;
-            filter: grayscale(100%) opacity(70%);
-            transition: all 0.2s linear;
         }
         .engineTxtSmall{
             font-size: 1.15rem;
             color: var(--black);
             font-weight: 500;
-            filter: grayscale(100%) opacity(70%);
-            transition: all 0.2s linear;
         }
         .engineTxtGrey{
             font-weight: 300;
             font-size: 1rem;
-            filter: grayscale(100%) opacity(70%);            
-            transition: all 0.2s linear;
         }
         .engineTraparent{
             color: rgba(15, 28, 45, 0.5);
@@ -50,33 +43,17 @@
             border-radius: 50%;
             background: var(--red);
             box-shadow: inset -10px -10px 10px #800000, inset 3px 3px 5px #FFF;
-            filter: grayscale(100%) opacity(70%);
             transition: all 0.2s linear;
         }
-        /* .circleWhite {
-            width: 1.6rem;
-            height: 1.6rem;
-            border-radius: 50%;
-            cursor: pointer;
-            background: rgba(165, 146, 146, 0.1);
-            box-shadow: inset -10px -10px 10px grey, inset 3px 3px 5px #FFF;
-        } */
         .engineRow:hover .circleRed{
-            filter: grayscale(0) opacity(1);
             width: 1.6rem;
             height: 1.6rem;            
         }
-        .engineRow:hover .engineTxtLarge{
+        .engineRow:hover{
             filter: grayscale(0) opacity(1);
         }
-        .engineRow:hover .engineTxtRed{
-            filter: grayscale(0) opacity(1);
-        }
-        .engineRow:hover .engineTxtSmall{
-            filter: grayscale(0) opacity(1);
-        }
-        .engineRow:hover .engineTxtSmall{
-            filter: grayscale(0) opacity(1);
+        .space{
+            display: none;
         }
         html{
             height: 100%;
@@ -98,7 +75,7 @@
             }
         }
         @media (max-width: 767.98px) {
-            .engineCar{
+            #engineCar{
                 transform: rotate(270deg);
                 padding-left: 40%;
                 margin-bottom: -11rem;
@@ -154,55 +131,55 @@
             </div>
         </div>
         
-            <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                    <img src="img/11.png" alt="Motor 1" class="img-fluid engineCar">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                <img src="img/1.png" alt="Motor 1" class="img-fluid" id="engineCar">
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar1">
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                        <div class="circleRed" id="circle1"></div>
+                    </div>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
-                    <div class="row bg-light engineRow mt-5 align-items-center">
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                        </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                        </div>
-                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                            <div class="circleRed"></div>
-                        </div>
+                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar2">
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
                     </div>
-                    <div class="row bg-light engineRow mt-5 align-items-center">
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                        </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                        </div>
-                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                            <div class="circleRed"></div>
-                        </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
                     </div>
-                    <div class="row bg-light engineRow mt-5 align-items-center">
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                        </div>
-                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                        </div>
-                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                            <div class="circleRed"></div>
-                        </div>
+                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                        <div class="circleRed" id="circle2"></div>
+                    </div>
+                </div>
+                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar3">
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                        <div class="circleRed" id="circle3"></div>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- fim do principal -->
     </div>
     <!-- geneal footer -->
@@ -210,21 +187,21 @@
             <div class="row align-items-center">
                 <div class="col-1 erase"></div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
-                    <p class="generalFooterTxtSmall" id="total">Total</p>
-                    <p class="generalFooterTxtLarge" id="total">$63.000</p>
+                    <p class="generalFooterTxtSmall total">Total</p>
+                    <p class="generalFooterTxtLarge total" id="totalEngine">$63.000</p>
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
                     <p class="generalFooterTxtSmall">Model R</p>
                 </div>
                 <div class="col-1 erase">
-                    <p class="generalFooterTxtSmall ">75 <span class="generalFooterTxtSmallRed">P</span> </p>
+                    <p class="generalFooterTxtSmall" id="numberIdEngine">75 <span class="generalFooterTxtSmallRed" id="letterIdEngine">P</span> </p>
                 </div>
                 <div class="col-1 erase">
-                    <img src="img/dot-red.png" class="icon " alt="dot red">
+                    <img src="img/dot-red.png" class="icon space" alt="dot red">
                 </div>
                 <div class="col-3 erase">
-                    <img src="img/7.png" class="icon " alt="dot red">
+                    <img src="img/7.png" class="icon space" alt="dot red">
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
                     <a href="color.html" class="noUnderline">
