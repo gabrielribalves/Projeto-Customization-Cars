@@ -11,15 +11,15 @@
         #titleWheels{
             margin-top: 5rem;
         }
-        .wheels{
+        /* .wheels{
             margin-top: 3rem;
-        }
+        } */
         #wheel1{
             width: 13rem;
             opacity: 0.4;
         }
         #wheel1:hover{
-            opacity: 1;
+            /* opacity: 1; */
             width: 17rem;
             transition: all 0.2s linear;
         }
@@ -28,7 +28,7 @@
             opacity: 0.4;
         }
         #wheel2:hover{
-            opacity: 1;
+            /* opacity: 1; */
             width: 17rem;
             transition: all 0.2s linear;
         }
@@ -37,15 +37,17 @@
             opacity: 0.4;
         }
         #wheel3:hover{
-            opacity: 1;
+            /* opacity: 1; */
             width: 17rem;
             transition: all 0.2s linear;
         }
         .txtDesc{
             font-weight: 500;
             line-height: 1rem;
-            display: none;
             transition: all 0.2s linear;
+        }
+        .destroy{
+            display: none;
         }
         html{
             height: 100%;
@@ -92,22 +94,22 @@
         <!-- fim do header -->
         <!-- Main Content -->
         <p class="title text-center" id="titleWheels">Wheels</p>
-        <div class="row wheels" align="center">
+        <div class="row wheels text-center mt-5">
             <!-- <div class="col-1"></div> -->
             <div class="col-4">
                 <img src="img/7.png" class="img-fluid pointer mb-4" id="wheel1" alt="Wheel 01">
-                <p class="txtDesc">20"Silver Metalic</p>
-                <p class="red txtDesc">Included</p>
+                <p class="txtDesc" id="txtWheels1">20"Silver Metalic</p>
+                <p class="red txtDesc" id="txtRedWheels1">Included</p>
             </div>
             <div class="col-4">
                 <img src="img/8.png" class="img-fluid pointer mb-4" id="wheel2" alt="Wheel 02">
-                <p class="txtDesc">20"Silver Metalic</p>
-                <p class="red txtDesc">Included</p>
+                <p class="txtDesc destroy" id="txtWheels2" >20"Silver Metalic</p>
+                <p class="red txtDesc destroy" id="txtRedWheels2">Included</p>
             </div>
             <div class="col-4">
                 <img src="img/9.png" class="img-fluid pointer mb-4" id="wheel3" alt="Wheel 03">
-                <p class="txtDesc">20"Silver Metalic</p>
-                <p class="red txtDesc">Included</p>
+                <p class="txtDesc destroy" id="txtWheels3">20"Silver Metalic</p>
+                <p class="red txtDesc destroy" id="txtRedWheels3">Included</p>
             </div>
         </div>
         <!-- End of Main Content -->
@@ -118,7 +120,7 @@
                 <div class="col-1 erase"></div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
                     <p class="generalFooterTxtSmall total">Total</p>
-                    <p class="generalFooterTxtLarge total" id="totalColor">$63.000</p>
+                    <p class="generalFooterTxtLarge total" id="totalWheels">$63.000</p>
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
@@ -126,18 +128,18 @@
                 </div>
                 <div class="col-1 erase align-text-top">
                     <div class="row mb-3">
-                        <span class="generalFooterTxtSmall" id="numberIdColor">75&nbsp;</span>
-                        <span class="generalFooterTxtSmall red" id="letterIdColor">P</span>
+                        <span class="generalFooterTxtSmall" id="numberIdWheels">75&nbsp;</span>
+                        <span class="generalFooterTxtSmall red" id="letterIdWheels">P</span>
                     </div>
                 </div>
                 <div class="col-1 erase">
-                    <img src="img/dot-red.png" class="icon mb-3" id="dotColor" alt="dot">
+                    <img src="img/dot-red.png" class="icon mb-3" id="dotWheels" alt="dot">
                 </div>
                 <div class="col-3 erase">
-                    <img src="img/7.png" class="icon mb-3 space" alt="Wheel">
+                    <img src="img/7.png" class="icon mb-3 space" id="footerWheel" alt="Wheel">
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
-                    <a href="wheels.html" class="noUnderline">
+                    <a href="index.html" class="noUnderline">
                         <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
                     </a>
                 </div>

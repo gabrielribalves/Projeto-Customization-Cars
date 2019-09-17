@@ -33,8 +33,6 @@ img_dotRed.addEventListener('click', function(){
   img_dotGrey.src = "img/dot-grey-off.png";
   p_colorName.innerHTML = "red";
   p_colorPrice.innerHTML = "red";
-  p_numberIdColor.innerHTML = "red";
-  p_letterIdColor.innerHTML = "red";
   p_totalColor.innerHTML = "red";
 });
 img_dotBlue.addEventListener('click', function(){
@@ -45,8 +43,6 @@ img_dotBlue.addEventListener('click', function(){
   img_dotGrey.src = "img/dot-grey-off.png";
   p_colorName.innerHTML = "blue";
   p_colorPrice.innerHTML = "blue";
-  p_numberIdColor.innerHTML = "blue";
-  p_letterIdColor.innerHTML = "blue";
   p_totalColor.innerHTML = "blue";
 });
 img_dotGrey.addEventListener('click', function(){
@@ -57,8 +53,6 @@ img_dotGrey.addEventListener('click', function(){
   img_dotGrey.src = "img/dot-grey-on.png";
   p_colorName.innerHTML = "grey";
   p_colorPrice.innerHTML = "grey";
-  p_numberIdColor.innerHTML = "grey";
-  p_letterIdColor.innerHTML = "grey";
   p_totalColor.innerHTML = "grey";
 });
 
