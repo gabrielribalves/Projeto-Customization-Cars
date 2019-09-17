@@ -87,9 +87,6 @@
             .title{
                 margin-bottom: -20%;
             }
-            .erase{
-                display: none;
-            }
         }
     </style>
 </head>
@@ -184,7 +181,7 @@
     </div>
     <!-- geneal footer -->
     <footer class="container-fluid shadow-lg" id="generalFooter">
-            <div class="row align-items-center">
+            <div class="row align-items-end">
                 <div class="col-1 erase"></div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
                     <p class="generalFooterTxtSmall total">Total</p>
@@ -194,14 +191,17 @@
                 <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
                     <p class="generalFooterTxtSmall">Model R</p>
                 </div>
-                <div class="col-1 erase">
-                    <p class="generalFooterTxtSmall" id="numberIdEngine">75 <span class="generalFooterTxtSmallRed" id="letterIdEngine">P</span> </p>
+                <div class="col-1 erase align-text-top">
+                    <div class="row mb-3">
+                            <span class="generalFooterTxtSmall align-self-center" id="numberIdEngine">75</span>
+                            <span class="generalFooterTxtSmall red" id="letterIdEngine">&nbsp;P</span>
+                    </div>
                 </div>
                 <div class="col-1 erase">
-                    <img src="img/dot-red.png" class="icon space" alt="dot red">
+                    <img src="img/dot-red.png" class="icon mb-3 space" alt="dot red">
                 </div>
                 <div class="col-3 erase">
-                    <img src="img/7.png" class="icon space" alt="dot red">
+                    <img src="img/7.png" class="icon mb-3 space" alt="dot red">
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
                     <a href="color.html" class="noUnderline">
@@ -211,7 +211,7 @@
             </div>
         </footer>
     <!-- fim do general footer -->
-  <script src="js/app.js"></script>
+  <script src="js/appEngine.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
 </html>

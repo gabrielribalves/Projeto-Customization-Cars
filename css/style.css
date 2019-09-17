@@ -7,11 +7,9 @@
     --grey: #a59292;
     --mainTransition: all 0.3s linear;
 }
-/* html, body{
-  height: 100%;
-} */
 body{
     font-family: 'Saira Condensed', sans-serif;
+
 }
 .red{
     color: var(--red);
@@ -81,13 +79,14 @@ body{
 .icon{
     width: 2rem;
 }
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
     #model{
         display: inline-block !important;
+        
         /* top: 2rem; */
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .erase{
         display: none;
     }
