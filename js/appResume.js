@@ -24,5 +24,17 @@ const p_resumeWheels = document.querySelector("#resumeWheels");
 const p_finalPrice = document.querySelector("#finalPrice");
 const img_veicle = document.querySelector("#veicle")
 
+window.onload = function loadPage() {
+  // p_startingPrice.innerHTML = "";
+  // p_plus1.innerHTML = "";
+  // p_plus2.innerHTML = "";
+  // p_plus3.innerHTML = "";
+  // p_resumeEngine.innerHTML = "";
+  // p_resumeColor.innerHTML = "";
+  // p_resumeWheels.innerHTML = "";
+  // p_finalPrice.innerHTML = "";
+  // img_veicle.src = ("img/")
+}
+
 
 // End of Resume
