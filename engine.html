@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
     <style>
-        .title{
-            margin-bottom: -3rem;
-        }
-        .engineCar{
-            width: 17.5rem;
-        }
+        /* .engineCar{
+        transform: rotate(90deg);
+        } */
         .engineRow{
             padding: 0.8rem;
             cursor: pointer;
@@ -40,7 +37,7 @@
         .engineTxtGrey{
             font-weight: 300;
             font-size: 1rem;
-            filter: grayscale(100%) opacity(70%);
+            filter: grayscale(100%) opacity(70%);            
             transition: all 0.2s linear;
         }
         .engineTraparent{
@@ -66,7 +63,7 @@
         .engineRow:hover .circleRed{
             filter: grayscale(0) opacity(1);
             width: 1.6rem;
-            height: 1.6rem;
+            height: 1.6rem;            
         }
         .engineRow:hover .engineTxtLarge{
             filter: grayscale(0) opacity(1);
@@ -99,19 +96,18 @@
                 font-size: 180%;
             }
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767.98px) {
             .engineCar{
                 transform: rotate(270deg);
-                margin-left: 4rem;
+                padding-left: 40%;
                 margin-bottom: -11rem;
-                margin-top: -4rem;
             }
             .bars{
                 /* padding-bottom: 10%; */
                 margin-bottom: -100%;
             }
             .title{
-                margin-bottom: -15rem;
+                margin-bottom: -20%;
             }
             .erase{
                 display: none;
@@ -156,56 +152,56 @@
                 <p class="mt-2 title">Engine</p>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                <img src="img/1.png" alt="Motor 1" class="img-fluid engineCar">
+        
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                    <img src="img/1.png" alt="Motor 1" class="img-fluid engineCar">
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="row bg-light engineRow mt-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                            <div class="circleRed"></div>
+                        </div>
+                    </div>
+                    <div class="row bg-light engineRow mt-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                            <div class="circleRed"></div>
+                        </div>
+                    </div>
+                    <div class="row bg-light engineRow mt-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
+                            <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
+                            <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
+                        </div>
+                        <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
+                            <div class="circleRed"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
-                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar1">
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                    </div>
-                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                        <div class="circleRed"></div>
-                    </div>
-                </div>
-                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar2">
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                    </div>
-                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                        <div class="circleRed"></div>
-                    </div>
-                </div>
-                <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar3">
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtLarge">75 <span class="engineTxtRed">P</span></p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
-                        <p class="engineTxtSmall">75 <span class="engineTxtGrey">kWh</span></p>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
-                        <p class="engineTxtSmall">275 <span class="engineTxtGrey">miles range</span></p>
-                    </div>
-                    <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
-                        <div class="circleRed"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- fim do principal -->
     </div>
     <!-- geneal footer -->
@@ -213,18 +209,22 @@
             <div class="row align-items-center">
                 <div class="col-1 erase"></div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
-                    <p class="generalFooterTxtSmall">Total</p>
+                    <p class="generalFooterTxtSmall" id="total">Total</p>
                     <p class="generalFooterTxtLarge" id="total">$63.000</p>
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
                     <p class="generalFooterTxtSmall">Model R</p>
                 </div>
-                <div class="col-1 erase" id="engineId"><p class="generalFooterTxtSmall " id="numberId">75 <span class="generalFooterTxtSmallRed" id="letterId">P</span></p></div>
-
-                <div class="col-1 erase"></div>
-                <div class="col-3 erase"></div>
-
+                <div class="col-1 erase">
+                    <p class="generalFooterTxtSmall ">75 <span class="generalFooterTxtSmallRed">P</span> </p>
+                </div>
+                <div class="col-1 erase">
+                    <img src="img/dot-red.png" class="icon " alt="dot red">
+                </div>
+                <div class="col-3 erase">
+                    <img src="img/7.png" class="icon " alt="dot red">
+                </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
                     <a href="color.html" class="noUnderline">
                         <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
