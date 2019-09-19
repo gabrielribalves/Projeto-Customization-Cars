@@ -50,7 +50,7 @@ const span_range3 = document.querySelector("#range3");
 
 // 5-AJAX request
 let ourRequest = new XMLHttpRequest();
-ourRequest.open('Get', '../package.json');
+ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-Cars/package.json');
 ourRequest.onload = function(){
     let ourData = JSON.parse(ourRequest.responseText);
     // let footerEngine1 = " ";  
@@ -110,7 +110,7 @@ ourRequest.onload = function(){
       // footerEngine2 = ourData.data.engine.items[2].type;
     });
     // End of events
-    
+
 
 
 
