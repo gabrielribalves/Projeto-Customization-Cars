@@ -13,15 +13,20 @@ const p_totalColor = document.querySelector("#totalColor");
 const p_numberIdColor = document.querySelector("#numberIdColor");
 const p_letterIdColor = document.querySelector("#letterIdColor");
 
+var kwh1 = window.localStorage.getItem('kwh');
+var type1 = window.localStorage.getItem('type');
+var totalPriceCar1 = window.localStorage.getItem('totalPriceCar');
 
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('Get', '../package.json');
 ourRequest.onload = function(){
   var ourData = JSON.parse(ourRequest.responseText);
-  p_totalColor.innerHTML = "$" + ourData.data.price;
+  p_totalColor.innerHTML = "$" + (totalPriceCar1 / 1000).toFixed(3);
   p_txtDescription.innerHTML = ourData.data.color.description;
+  p_numberIdColor.innerHTML = kwh1 + "&nbsp;";
+  p_letterIdColor.innerHTML = type1;
 
-
+  
   img_dotRed.addEventListener('click', function(){
     img_colorCar.src = "img/4.png";
     img_dotColor.src = "img/dot-red.png";
@@ -30,8 +35,12 @@ ourRequest.onload = function(){
     img_dotGrey.src = "img/dot-grey-off.png";
     p_colorName.innerHTML = ourData.data.color.items[0].label;
     p_colorPrice.innerHTML = "Included";
-    p_totalColor.innerHTML = "$" + ourData.data.price;
+    p_totalColor.innerHTML = "$" + (totalPriceCar1 / 1000).toFixed(3);
+    
+    window.localStorage.setItem('colorPrice', ourData.data.color.items[0].price);
+    window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[0].price + totalPriceCar1));
   });
+
   img_dotBlue.addEventListener('click', function(){
     img_colorCar.src = "img/5.png";
     img_dotColor.src = "img/dot-blue.png";
@@ -40,8 +49,12 @@ ourRequest.onload = function(){
     img_dotGrey.src = "img/dot-grey-off.png";
     p_colorName.innerHTML = ourData.data.color.items[1].label;
     p_colorPrice.innerHTML = ourData.data.color.items[1].price;
-    p_totalColor.innerHTML = "$" + (ourData.data.price + ourData.data.color.items[1].price);
+    p_totalColor.innerHTML = "$" + ((Number(totalPriceCar1) + Number(ourData.data.color.items[1].price)) / 1000 ).toFixed(3);
+    
+    window.localStorage.setItem('colorPrice', ourData.data.color.items[1].price);
+    window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar1) + Number(ourData.data.color.items[1].price)));
   });
+
   img_dotGrey.addEventListener('click', function(){
     img_colorCar.src = "img/6.png";
     img_dotColor.src = "img/dot-grey.png";
@@ -50,7 +63,10 @@ ourRequest.onload = function(){
     img_dotGrey.src = "img/dot-grey-on.png";
     p_colorName.innerHTML = ourData.data.color.items[2].label;
     p_colorPrice.innerHTML = ourData.data.color.items[2].price;
-    p_totalColor.innerHTML = "$" + (ourData.data.price + ourData.data.color.items[2].price);
+    p_totalColor.innerHTML = "$" + ((Number(totalPriceCar1) + Number(ourData.data.color.items[2].price)) / 1000 ).toFixed(3);
+    
+    window.localStorage.setItem('colorPrice', ourData.data.color.items[2].price);
+    window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar1) + Number(ourData.data.color.items[2].price)));
   });
 
 // End of Color

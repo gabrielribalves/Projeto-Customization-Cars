@@ -21,15 +21,12 @@ const span_range3 = document.querySelector("#range3");
 // End of DOM variables Engine
 
 
-
 // AJAX request
 let ourRequest = new XMLHttpRequest();
 ourRequest.open('Get', '../package.json');
 ourRequest.onload = function(){
     let ourData = JSON.parse(ourRequest.responseText);
-    // let footerEngine1 = " ";  
-    // let footerEngine2 = " ";
-    p_totalEngine.innerHTML = "$" + ourData.data.price;
+    p_totalEngine.innerHTML = "$" + (ourData.data.price / 1000).toFixed(3);
     p_kwh1.innerHTML = ourData.data.engine.items[0].kwh + "&nbsp;";
     p_kwh2.innerHTML = ourData.data.engine.items[1].kwh + "&nbsp;";
     p_kwh3.innerHTML = ourData.data.engine.items[2].kwh + "&nbsp;";
@@ -49,24 +46,29 @@ ourRequest.onload = function(){
       div_engineBar2.style.filter= "grayscale(100%) opacity(70%)";
       div_engineBar3.style.filter= "grayscale(100%) opacity(70%)";
       img_engineCar.src= "img/1.png";
-      p_totalEngine.innerHTML = "$" + ourData.data.price;
+      p_totalEngine.innerHTML = "$" + (ourData.data.price / 1000).toFixed(3);
       p_numberIdEngine.innerHTML = ourData.data.engine.items[0].kwh + "&nbsp;";
       span_letterIdEngine.innerHTML = ourData.data.engine.items[0].type;
-      // footerEngine1 =  ourData.data.engine.items[0].kwh;
-      // footerEngine2 = ourData.data.engine.items[0].type;
+
+      window.localStorage.setItem('kwh', ourData.data.engine.items[0].kwh);
+      window.localStorage.setItem('type', ourData.data.engine.items[0].type);
+      window.localStorage.setItem('enginePrice', ourData.data.engine.items[0].price);
+      window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[0].price + ourData.data.price));
     });
 
-    
     div_engineBar2.addEventListener('click',function(){
       div_engineBar2.style.filter= "grayscale(0) opacity(1)";
       div_engineBar1.style.filter= "grayscale(100%) opacity(70%)";
       div_engineBar3.style.filter= "grayscale(100%) opacity(70%)";
       img_engineCar.src= "img/2.png";
-      p_totalEngine.innerHTML = "$" + (63000 + Number(ourData.data.engine.items[1].price));
+      p_totalEngine.innerHTML = "$" + ((63000 + ourData.data.engine.items[1].price) / 1000).toFixed(3);
       p_numberIdEngine.innerHTML = ourData.data.engine.items[1].kwh + "&nbsp;";
       span_letterIdEngine.innerHTML = ourData.data.engine.items[1].type;
-      // footerEngine1 =  ourData.data.engine.items[1].kwh;
-      // footerEngine2 = ourData.data.engine.items[1].type;
+
+      window.localStorage.setItem('kwh', ourData.data.engine.items[1].kwh);
+      window.localStorage.setItem('type', ourData.data.engine.items[1].type);
+      window.localStorage.setItem('enginePrice', ourData.data.engine.items[1].price);
+      window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[1].price + ourData.data.price));
     });
     
     div_engineBar3.addEventListener('click',function(){
@@ -74,16 +76,17 @@ ourRequest.onload = function(){
       div_engineBar1.style.filter= "grayscale(100%) opacity(70%)";
       div_engineBar2.style.filter= "grayscale(100%) opacity(70%)";
       img_engineCar.src= "img/3.png";
-      p_totalEngine.innerHTML = "$" + (63000 + Number(ourData.data.engine.items[2].price)) ;
+      p_totalEngine.innerHTML = "$" + ((63000 + ourData.data.engine.items[2].price) / 1000).toFixed(3);
       p_numberIdEngine.innerHTML = ourData.data.engine.items[2].kwh + "&nbsp;";
       span_letterIdEngine.innerHTML = ourData.data.engine.items[2].type;
-      // footerEngine1 =  ourData.data.engine.items[2].kwh;
-      // footerEngine2 = ourData.data.engine.items[2].type;
+
+      window.localStorage.setItem('kwh', ourData.data.engine.items[2].kwh);
+      window.localStorage.setItem('type', ourData.data.engine.items[2].type);
+      window.localStorage.setItem('enginePrice', ourData.data.engine.items[2].price);
+      window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[2].price + ourData.data.price));
     });
     // End of events
-    // console.log(footerEngine1 + " " + footerEngine2);
-
-};
+  };
 // End of AJAX request
 ourRequest.send();
 
