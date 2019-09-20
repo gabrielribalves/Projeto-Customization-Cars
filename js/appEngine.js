@@ -54,6 +54,8 @@ ourRequest.onload = function(){
       window.localStorage.setItem('type', ourData.data.engine.items[0].type);
       window.localStorage.setItem('enginePrice', ourData.data.engine.items[0].price);
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[0].price + ourData.data.price));
+
+      window.localStorage.setItem('engineId', ourData.data.engine.items[0].id);
     });
 
     div_engineBar2.addEventListener('click',function(){
@@ -69,6 +71,8 @@ ourRequest.onload = function(){
       window.localStorage.setItem('type', ourData.data.engine.items[1].type);
       window.localStorage.setItem('enginePrice', ourData.data.engine.items[1].price);
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[1].price + ourData.data.price));
+
+      window.localStorage.setItem('engineId', ourData.data.engine.items[1].id);
     });
     
     div_engineBar3.addEventListener('click',function(){
@@ -84,6 +88,8 @@ ourRequest.onload = function(){
       window.localStorage.setItem('type', ourData.data.engine.items[2].type);
       window.localStorage.setItem('enginePrice', ourData.data.engine.items[2].price);
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[2].price + ourData.data.price));
+
+      window.localStorage.setItem('engineId', ourData.data.engine.items[2].id);
     });
     // End of events
   };

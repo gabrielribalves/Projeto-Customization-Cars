@@ -39,6 +39,9 @@ ourRequest.onload = function(){
     
     window.localStorage.setItem('colorPrice', ourData.data.color.items[0].price);
     window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[0].price + totalPriceCar1));
+
+    window.localStorage.setItem('colorId', ourData.data.color.items[0].id);
+
   });
 
   img_dotBlue.addEventListener('click', function(){
@@ -53,6 +56,8 @@ ourRequest.onload = function(){
     
     window.localStorage.setItem('colorPrice', ourData.data.color.items[1].price);
     window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar1) + Number(ourData.data.color.items[1].price)));
+
+    window.localStorage.setItem('colorId', ourData.data.color.items[1].id);
   });
 
   img_dotGrey.addEventListener('click', function(){
@@ -67,6 +72,8 @@ ourRequest.onload = function(){
     
     window.localStorage.setItem('colorPrice', ourData.data.color.items[2].price);
     window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar1) + Number(ourData.data.color.items[2].price)));
+
+    window.localStorage.setItem('colorId', ourData.data.color.items[2].id);
   });
 
 // End of Color
