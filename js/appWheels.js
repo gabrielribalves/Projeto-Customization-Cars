@@ -36,7 +36,7 @@ if(colorId == "4"){
 
 // AJAX request
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('Get', '../package.json');
+ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-Cars/package.json');
 ourRequest.onload = function(){
     var ourData = JSON.parse(ourRequest.responseText);
     p_totalWheels.innerHTML = "$" + (totalPriceCar2 / 1000).toFixed(3);
@@ -80,9 +80,9 @@ ourRequest.onload = function(){
     p_txtWheels3.style.display = "none";
     p_txtRedWheels3.style.display = "none";
 
-    p_totalWheels.innerHTML = "$" + ((Number(totalPriceCar2) + Number(ourData.data.wheels.items[1].price)) / 1000).toFixed(3);
     p_txtWheels2.innerHTML = ourData.data.wheels.items[1].label;
-    p_txtRedWheels2.innerHTML = ourData.data.wheels.items[1].price;
+    p_txtRedWheels2.innerHTML = "+$" + (ourData.data.wheels.items[1].price / 1000).toFixed(3);
+    p_totalWheels.innerHTML = "$" + ((Number(totalPriceCar2) + Number(ourData.data.wheels.items[1].price)) / 1000).toFixed(3);
 
     window.localStorage.setItem('wheelPrice', ourData.data.wheels.items[1].price);
     window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar2) + Number(ourData.data.wheels.items[1].price)));
@@ -102,9 +102,9 @@ ourRequest.onload = function(){
     p_txtWheels3.style.display = "block";
     p_txtRedWheels3.style.display = "block";
 
-    p_totalWheels.innerHTML = "$" + ((Number(totalPriceCar2) + Number(ourData.data.wheels.items[2].price)) / 1000).toFixed(3);
     p_txtWheels3.innerHTML = ourData.data.wheels.items[2].label;
-    p_txtRedWheels3.innerHTML = ourData.data.wheels.items[2].price;
+    p_txtRedWheels3.innerHTML = "+$" + (ourData.data.wheels.items[2].price / 1000).toFixed(3);
+    p_totalWheels.innerHTML = "$" + ((Number(totalPriceCar2) + Number(ourData.data.wheels.items[2].price)) / 1000).toFixed(3);
 
     window.localStorage.setItem('wheelPrice', ourData.data.wheels.items[2].price);
     window.localStorage.setItem('totalPriceCar', (Number(totalPriceCar2) + Number(ourData.data.wheels.items[2].price)));

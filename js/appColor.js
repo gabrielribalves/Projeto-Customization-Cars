@@ -18,7 +18,7 @@ var type1 = window.localStorage.getItem('type');
 var totalPriceCar1 = window.localStorage.getItem('totalPriceCar');
 
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('Get', '../package.json');
+ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-Cars/package.json');
 ourRequest.onload = function(){
   var ourData = JSON.parse(ourRequest.responseText);
   p_totalColor.innerHTML = "$" + (totalPriceCar1 / 1000).toFixed(3);
@@ -51,7 +51,7 @@ ourRequest.onload = function(){
     img_dotBlue.src = "img/dot-blue-on.png";
     img_dotGrey.src = "img/dot-grey-off.png";
     p_colorName.innerHTML = ourData.data.color.items[1].label;
-    p_colorPrice.innerHTML = ourData.data.color.items[1].price;
+    p_colorPrice.innerHTML = "+$" + (ourData.data.color.items[1].price / 1000).toFixed(3);
     p_totalColor.innerHTML = "$" + ((Number(totalPriceCar1) + Number(ourData.data.color.items[1].price)) / 1000 ).toFixed(3);
     
     window.localStorage.setItem('colorPrice', ourData.data.color.items[1].price);
@@ -67,7 +67,7 @@ ourRequest.onload = function(){
     img_dotBlue.src = "img/dot-blue-off.png";
     img_dotGrey.src = "img/dot-grey-on.png";
     p_colorName.innerHTML = ourData.data.color.items[2].label;
-    p_colorPrice.innerHTML = ourData.data.color.items[2].price;
+    p_colorPrice.innerHTML = "+$" + (ourData.data.color.items[2].price / 1000).toFixed(3);
     p_totalColor.innerHTML = "$" + ((Number(totalPriceCar1) + Number(ourData.data.color.items[2].price)) / 1000 ).toFixed(3);
     
     window.localStorage.setItem('colorPrice', ourData.data.color.items[2].price);

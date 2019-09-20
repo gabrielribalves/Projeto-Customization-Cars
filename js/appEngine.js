@@ -20,10 +20,12 @@ const span_range2 = document.querySelector("#range2");
 const span_range3 = document.querySelector("#range3");
 // End of DOM variables Engine
 
+var cont = 0;
+
 
 // AJAX request
 let ourRequest = new XMLHttpRequest();
-ourRequest.open('Get', '../package.json');
+ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-Cars/package.json');
 ourRequest.onload = function(){
     let ourData = JSON.parse(ourRequest.responseText);
     p_totalEngine.innerHTML = "$" + (ourData.data.price / 1000).toFixed(3);
@@ -56,6 +58,7 @@ ourRequest.onload = function(){
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[0].price + ourData.data.price));
 
       window.localStorage.setItem('engineId', ourData.data.engine.items[0].id);
+      cont += 1;
     });
 
     div_engineBar2.addEventListener('click',function(){
@@ -73,6 +76,7 @@ ourRequest.onload = function(){
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[1].price + ourData.data.price));
 
       window.localStorage.setItem('engineId', ourData.data.engine.items[1].id);
+      cont += 1;
     });
     
     div_engineBar3.addEventListener('click',function(){
@@ -90,10 +94,11 @@ ourRequest.onload = function(){
       window.localStorage.setItem('totalPriceCar', (ourData.data.engine.items[2].price + ourData.data.price));
 
       window.localStorage.setItem('engineId', ourData.data.engine.items[2].id);
+      cont += 1;
     });
     // End of events
+    
   };
 // End of AJAX request
 ourRequest.send();
-
 // End of Engine
