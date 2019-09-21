@@ -1,5 +1,3 @@
-// Wheels
-
 // DOM variables
 const img_wheel1 = document.querySelector("#wheel1");
 const img_wheel2 = document.querySelector("#wheel2");
@@ -13,10 +11,10 @@ const p_txtRedWheels3 = document.querySelector("#txtRedWheels3");
 
 const p_totalWheels = document.querySelector("#totalWheels");
 const img_footerWheel = document.querySelector("#footerWheel");
-
 const img_dotWheels = document.querySelector("#dotWheels");
 const span_numberIdWheels = document.querySelector("#numberIdWheels");
 const span_letterIdWheels = document.querySelector("#letterIdWheels");
+const a_nextFooter = document.querySelector(".nextFooter");
 
 // local storage variables
 var kwh2 = window.localStorage.getItem('kwh');
@@ -24,6 +22,7 @@ var type2 = window.localStorage.getItem('type');
 var totalPriceCar2 = window.localStorage.getItem('totalPriceCar');
 var colorId = window.localStorage.getItem('colorId');
 
+// local variables
 var colorSrc;
 
 if(colorId == "4"){
@@ -40,6 +39,7 @@ ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-
 ourRequest.onload = function(){
     var ourData = JSON.parse(ourRequest.responseText);
     p_totalWheels.innerHTML = "$" + (totalPriceCar2 / 1000).toFixed(3);
+    // Firsts innerHTML
     span_numberIdWheels.innerHTML = kwh2 + "&nbsp;";
     span_letterIdWheels.innerHTML = type2;
     img_dotWheels.src = colorSrc;
@@ -56,6 +56,8 @@ ourRequest.onload = function(){
     p_txtRedWheels2.style.display = "none";
     p_txtWheels3.style.display = "none";
     p_txtRedWheels3.style.display = "none";
+    a_nextFooter.href= "resume.html"
+    a_nextFooter.style.opacity = "1"; 
 
     p_totalWheels.innerHTML = "$" + (totalPriceCar2 / 1000).toFixed(3);
     p_txtWheels1.innerHTML = ourData.data.wheels.items[0].label;
@@ -79,6 +81,8 @@ ourRequest.onload = function(){
     p_txtRedWheels2.style.display = "block";
     p_txtWheels3.style.display = "none";
     p_txtRedWheels3.style.display = "none";
+    a_nextFooter.href= "resume.html"
+    a_nextFooter.style.opacity = "1"; 
 
     p_txtWheels2.innerHTML = ourData.data.wheels.items[1].label;
     p_txtRedWheels2.innerHTML = "+$" + (ourData.data.wheels.items[1].price / 1000).toFixed(3);
@@ -101,6 +105,8 @@ ourRequest.onload = function(){
     p_txtRedWheels2.style.display = "none";
     p_txtWheels3.style.display = "block";
     p_txtRedWheels3.style.display = "block";
+    a_nextFooter.href= "resume.html"
+    a_nextFooter.style.opacity = "1"; 
 
     p_txtWheels3.innerHTML = ourData.data.wheels.items[2].label;
     p_txtRedWheels3.innerHTML = "+$" + (ourData.data.wheels.items[2].price / 1000).toFixed(3);
@@ -111,7 +117,7 @@ ourRequest.onload = function(){
 
     window.localStorage.setItem('wheelsId', ourData.data.wheels.items[2].id);
   });
-
+  // End of events
 };
 ourRequest.send();
 // End of Whells

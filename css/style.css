@@ -9,7 +9,6 @@
 }
 body{
     font-family: 'Saira Condensed', sans-serif;
-
 }
 .red{
     color: var(--red);
@@ -35,9 +34,17 @@ body{
 }
 /* End of General configuration */
 
+/*General Footer*/
+.ancorHome{
+    margin: 0 1rem 0 1rem;
+}
+.borderBottom{
+    border-bottom: var(--red) 2.2px solid
+}
+
+/*End of General Footer*/
+
 /* General footer */
-/* #generalFooter{
-} */
 .generalFooterTxtLarge{
     font-size: 2rem;
     letter-spacing: 0.15rem;
@@ -57,6 +64,10 @@ body{
     letter-spacing: 0.1rem;
     margin-right: 0.5rem;
 }
+.nextFooter{
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
 .total{
     line-height: 1.2rem;
 }
@@ -64,13 +75,9 @@ body{
     padding-left: 11rem;
     padding-right: 11rem;
 }
-.ancorHome{
-    margin: 0 1rem 0 1rem;
-}
 .hrClass{
     border: solid var(--red) 1.5px;
     width: 2.4rem;
-    /* border-radius: 50%; */
 }
 .hrTop{
     top: 0.9rem;
@@ -79,11 +86,14 @@ body{
 .icon{
     width: 2rem;
 }
+.additionalValue{
+    POSITION: absolute;
+    right: 0;
+    top: 6px;
+}
 @media (max-width: 575.98px) {
     #model{
         display: inline-block !important;
-        
-        /* top: 2rem; */
     }
 }
 @media (max-width: 767.98px) {
@@ -92,8 +102,5 @@ body{
     }
 }
 
-  /* End of General footer */
+/* End of General footer */
 
-/* Home */
-
-/* fim do Home */

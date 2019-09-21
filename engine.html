@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Engine</title>
     <style>
@@ -93,31 +93,30 @@
         <header>
                 <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
                     <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
-                    <p class="font-weight-bold d-none no-padding" id="model">Model R</p>
+                    <p class="font-weight-bold d-none no-padding borderBottom" id="model">Model R</p>
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="font-weight-bold ancorHome">Model R</a>
-                                <!-- <hr class="position-absolute hrClass hrTop"> -->
+                                <a class="font-weight-bold ancorHome borderBottom pointer">Model R</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome erase">Model IQ</a>
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model IQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome erase">Model Mobi</a>
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Mobi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome erase">Model Charlie</a>
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Charlie</a>
                             </li>
                             <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome erase">Model Italy</a>
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Italy</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
-        <!-- fim do header -->
-        <!-- principal -->
+        <!-- End of header -->
+        <!-- Main content -->
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-1 col-sm-1 col-1"></div>
             <div class="col-3">
@@ -133,65 +132,71 @@
                 <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar1">
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                         <div class="row d-inline">
-                            <p class="engineTxtLarge d-inline" id="kwh1">aa</p>
-                            <span class="engineTxtRed engineTxtLarge d-inline" id="type1">bb</span>
+                            <p class="engineTxtLarge d-inline" id="kwh1"></p>
+                            <span class="engineTxtRed engineTxtLarge d-inline" id="type1"></span>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3 align-text-top">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="kwhA">cc</p>
+                            <p class="engineTxtSmall d-inline" id="kwhA"></p>
                             <span class="engineTxtGrey d-inline">kWh</span>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="range1">dd</p>
+                            <p class="engineTxtSmall d-inline" id="range1"></p>
                             <span class="engineTxtGrey d-inline">miles range</span>
                         </div>        
                     </div>
                     <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
                         <div class="circleRed" id="circle1"></div>
                     </div>
+                </div>
+                <div class="row position-relative">
+                        <p class="generalFooterTxtSmall red erase additionalValue" id="additionalValue0"></p>
                 </div>
                 <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar2">
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                         <div class="row d-inline">
-                            <p class="engineTxtLarge d-inline" id="kwh2">aa</p>
-                            <span class="engineTxtRed engineTxtLarge d-inline" id="type2">bb</span>
+                            <p class="engineTxtLarge d-inline" id="kwh2"></p>
+                            <span class="engineTxtRed engineTxtLarge d-inline" id="type2"></span>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3 align-text-top">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="kwhB">cc</p>
+                            <p class="engineTxtSmall d-inline" id="kwhB"></p>
                             <span class="engineTxtGrey d-inline">kWh</span>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="range2">dd</p>
+                            <p class="engineTxtSmall d-inline" id="range2"></p>
                             <span class="engineTxtGrey d-inline">miles range</span>
                         </div>        
                     </div>
                     <div class="col-xl-1 col-lg-1 col-sm-1 col-xs-1 col-1">
                         <div class="circleRed" id="circle1"></div>
                     </div>
+                </div>
+                <div class="row position-relative">
+                    <p class="generalFooterTxtSmall red erase additionalValue" id="additionalValue1"></p>
                 </div>
                 <div class="row bg-light engineRow mt-5 align-items-center" id="engineBar3">
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3">
                         <div class="row d-inline">
-                            <p class="engineTxtLarge d-inline" id="kwh3">aa</p>
-                            <span class="engineTxtRed engineTxtLarge d-inline" id="type3">bb</span>
+                            <p class="engineTxtLarge d-inline" id="kwh3"></p>
+                            <span class="engineTxtRed engineTxtLarge d-inline" id="type3"></span>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-3 col-3 align-text-top">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="kwhC">cc</p>
+                            <p class="engineTxtSmall d-inline" id="kwhC"></p>
                             <span class="engineTxtGrey d-inline">kWh</span>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-sm-4 col-xs-4 col-4">
                         <div class="row d-inline">
-                            <p class="engineTxtSmall d-inline" id="range3">dd</p>
+                            <p class="engineTxtSmall d-inline" id="range3"></p>
                             <span class="engineTxtGrey d-inline">miles range</span>
                         </div>        
                     </div>
@@ -199,9 +204,12 @@
                         <div class="circleRed" id="circle1"></div>
                     </div>
                 </div>
+                <div class="row position-relative">
+                    <p class="generalFooterTxtSmall red erase additionalValue" id="additionalValue2"></p>
+                </div>
             </div>
         </div>
-        <!-- fim do principal -->
+        <!-- End of Main content -->
     </div>
     <!-- geneal footer -->
     <footer class="container-fluid shadow-lg" id="generalFooter">
@@ -228,14 +236,13 @@
                     <img src="img/7.png" class="icon mb-3 space" alt="dot red">
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
-                    <a href="color.html" class="noUnderline">
+                    <a href="#" class="noUnderline nextFooter">
                         <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
                     </a>
                 </div>
             </div>
         </footer>
-    <!-- fim do general footer -->
+    <!-- end of general footer -->
   <script src="js/appEngine.js"></script>
-  <script src="js/bootstrap.js"></script>
 </body>
 </html>

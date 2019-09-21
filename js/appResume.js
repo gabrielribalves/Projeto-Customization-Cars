@@ -14,21 +14,22 @@ var totalPriceCar3 = window.localStorage.getItem('totalPriceCar');
 var enginePrice = window.localStorage.getItem('enginePrice');
 var colorPrice = window.localStorage.getItem('colorPrice');
 var wheelPrice = window.localStorage.getItem('wheelPrice');
-
 var engineId = window.localStorage.getItem('engineId');
 var colorId = window.localStorage.getItem('colorId');
 var wheelsId = window.localStorage.getItem('wheelsId');
 
+// local variables
 var engineTxt;
 var colorTxt;
 var colorSrc;
 var wheelsTxt;
 
-
+// AJAX request
 var ourRequest = new XMLHttpRequest();
 ourRequest.open('Get', 'https://gabrielribalves.github.io/Projeto-Customization-Cars/package.json');
 ourRequest.onload = function(){
     var ourData = JSON.parse(ourRequest.responseText);
+
     if(engineId == "1"){
       engineTxt = "75 P - 75 kWh - 275 miles range";
       p_plus1.innerHTML = "Included";
@@ -53,7 +54,7 @@ ourRequest.onload = function(){
       colorSrc = "img/final-6.png"
       p_plus2.innerHTML = "+$" + (colorPrice / 1000).toFixed(3);
     }
-    
+
     if(wheelsId == "7"){
       wheelsTxt = "20” Silver Metalic";
       p_plus3.innerHTML = "Included";
@@ -64,13 +65,16 @@ ourRequest.onload = function(){
       wheelsTxt = "22” Performance Carbon";
       p_plus3.innerHTML = "+$" + (wheelPrice / 1000).toFixed(3);
     }
-      p_startingPrice.innerHTML = "$" + (ourData.data.price / 1000).toFixed(3);
-      p_resumeEngine.innerHTML = engineTxt;
-      p_resumeColor.innerHTML = colorTxt;
-      p_resumeWheels.innerHTML = wheelsTxt;
-      p_finalPrice.innerHTML = "$" + (totalPriceCar3 / 1000).toFixed(3);
-      img_veicle.src = colorSrc;
+    
+    p_startingPrice.innerHTML = "$" + (ourData.data.price / 1000).toFixed(3);
+    p_resumeEngine.innerHTML = engineTxt;
+    p_resumeColor.innerHTML = colorTxt;
+    p_resumeWheels.innerHTML = wheelsTxt;
+    //p_finalPrice.innerHTML = "$" + (totalPriceCar3 / 1000).toFixed(3);
+    p_finalPrice.innerHTML = "$" + ((Number(ourData.data.price) + Number(enginePrice) + Number(colorPrice) + Number(wheelPrice))/1000).toFixed(3);
+    img_veicle.src = colorSrc;
 
-
-};
+    //End of Events
+    };
+    // End of AJAX request
 ourRequest.send();

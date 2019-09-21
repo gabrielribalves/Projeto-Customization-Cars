@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queriesResume.css">
     <title>Resume</title>
     <style>
         #main{
@@ -93,31 +92,31 @@
     <div class="container">
         <!-- header -->
         <header>
-                <nav class="navbar navbar-expand-lg navbar-light mt-1">
-                    <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto" id="ulNavbar">
-                            <li class="nav-item">
-                                <a class="font-weight-bold ancorHome">Model R</a>
-                                <!-- <hr class="position-absolute hrClass hrTop"> -->
-                            </li>
-                            <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model IQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Mobi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Charlie</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="font-weight-light transparente ancorHome">Model Italy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-        <!-- fim do header -->
+            <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
+                <img src="img/RV-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                <p class="font-weight-bold d-none no-padding borderBottom" id="model">Model R</p>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="font-weight-bold ancorHome borderBottom pointer">Model R</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model IQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Mobi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Charlie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Italy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- end of header -->
         <!-- Main content -->
         <div class="row" id="main">
             <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 spacing"></div>
@@ -127,7 +126,7 @@
         </div>
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                <img src="img/final-4.png" class="img-fluid" id="veicle" alt="Carro final">
+                <img src="#" class="img-fluid" id="veicle" alt="Carro final">
             </div>
 
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-1 erase"></div>
@@ -138,49 +137,41 @@
                         <p>Starting price</p>
                     </div>
                     <div class="col-4">
-                        <p class="red text-right" id="startingPrice">$63.000</p> 
-                        <!-- ------------------------ -->
+                        <p class="red text-right" id="startingPrice"></p>                         
                     </div>
                 </div>
                 <div class="row mb-2"><hr class="line"></div>
                 <div class="row">
                     <div class="col-8">
-                        <p id="resumeEngine">75 p - 75 KWh - 275 miles range</p>
-                        <!-- ------------------------ -->
+                        <p id="resumeEngine"></p>                        
                     </div>
                     <div class="col-4">
-                        <p class="red text-right" id="plus1">+ $5.500</p> 
-                        <!-- ------------------------ -->
+                        <p class="red text-right" id="plus1"></p>                         
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-8">
-                        <p id="resumeColor">Metalic Vermilion Paint</p>
-                        <!-- ------------------------ -->
+                        <p id="resumeColor"></p>                        
                     </div>
                     <div class="col-4">
-                        <p class="red text-right" id="plus2">Included</p> 
-                        <!-- ------------------------ -->
+                        <p class="red text-right" id="plus2"></p>                         
                     </div>                    
                 </div>
                 <div class="row">
                     <div class="col-8">
-                        <p id="resumeWheels">22" Performance Carbon</p>
-                        <!-- ------------------------ -->
+                        <p id="resumeWheels"></p>                        
                     </div>
                     <div class="col-4">
-                        <p class="red text-right" id="plus3">+ $2.000</p> 
-                        <!-- ------------------------ -->
+                        <p class="red text-right" id="plus3"></p>                         
                     </div>                    
                 </div>
                 <div class="row mb-3"><hr class="line"></div>
                 <div class="row mb-5">
                     <div class="col-8">
-                        <p class="final">Final Price</p>
-                        <!-- ------------------------ -->
+                        <p class="final">Final Price</p>                        
                     </div>
                     <div class="col-4">
-                        <p class="red final text-right" id="finalPrice">$71.000</p> 
+                        <p class="red final text-right" id="finalPrice"></p> 
                     </div>                    
                 </div>
                 <div class="row pb-5">
@@ -192,7 +183,6 @@
         </div>
         <!-- End of Main content -->
     </div>
-  <script src="js/appResume.js"></script>
-  <script src="js/bootstrap.js"></script>
+    <script src="js/appResume.js"></script>
 </body>
 </html> 
