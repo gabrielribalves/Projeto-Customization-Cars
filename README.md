@@ -7,7 +7,7 @@
     </div>
     <h3>Prints do Site em tela Mobile</h3>
     <div>
-        <img class="mobile" width="50%" src="img/prints/Home M.png">
+        <img class="mobile" width="20%" src="img/prints/Home M.png">
         <p>Home Mobile</p>
     </div>
 </body>
